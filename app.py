@@ -130,7 +130,7 @@ async def analyze_image(
     image_b64 = image_to_base64_jpeg(image_bytes)
 
     response = client.chat.completions.create(
-        model="google/gemma-4-26b-it:free",
+        model="google/gemma-4-26b-a4b-it:free",
         messages=[
             {
                 "role": "system",
